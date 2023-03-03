@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+           margin: 5%;
+        }
+        input[type=text],
+        select {
+            width: 30%;
+            padding: 6px 10px;
+            margin: 4px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Pendaftaran SIB 2023</h1>
+    <form action="GET">
+        <label for="nama">Nama Lengkap : </label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"><br>
+        <label for="nama">Email : </label><br>
+        <input type="text" id="email" name="email" placeholder="Masukkan email"><br>
+        <label for="nama">No Hp : </label><br>
+        <input type="text" id="hp" name="hp" placeholder="Masukkan no. HP"><br>
+        <label for="jenis">Jenis Kelamin :</label><br>
+        <input type="radio" id="laki" name="jenis">
+        <label for="laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis">
+        <label for="perempuan">Perempuan</label><br>
+        <label for="jurusan">Jurusan :</label><br>
+        <select name="jurusan" id="jurusan">
+            <option value="informatika">Teknik Informatika</option>
+            <option value="inggris">Bahasa Inggris</option>
+            <option value="mesin">Teknik Mesin</option>
+            <option value="elektro">Teknik Elektro</option>
+        </select><br>
+        <label for="alamat">Alamat : </label><br>
+        <textarea id="alamat" name="alamat" rows="5" cols="47" placeholder="Masukkan alamat">
+        </textarea><br>
+        <label for="foto">Foto :</label><br>
+        <input type="file" id="foto" name="foto" multiple><br><br>
+        <input type="submit" value="Daftar">    
+
+    </form>
+
+</body>
+
+</html>
