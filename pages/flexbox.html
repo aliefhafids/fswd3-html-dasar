@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <style>
+        .row-start {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+        }
+
+        .item1 {
+            background-color: #05668d;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 230px;
+            margin: 5px;
+        }
+
+        .column1 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+
+        .item2 {
+            background-color: #028090;
+            text-align: center;
+            padding-top: 50px;
+            flex: 1 1 100px;
+            margin: 5px;
+        }
+
+        .item3 {
+            background-color: #00a896;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 250px;
+            margin: 5px;
+        }
+
+        .item4 {
+            background-color: #02c39a;
+            text-align: center;
+            padding-top: 70px;
+            flex: 1 1 100px;
+            margin: 5px;
+        }
+
+        /* --------- baris kedua --------- */
+        .item5 {
+            background-color: #f0f3bd;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 300px;
+            margin: 5px;
+        }
+
+        .column2 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+        }
+
+        .item6 {
+            background-color: #9ec1a3;
+            text-align: center;
+            padding-top: 70px;
+            flex: 1 1 150px;
+            margin: 5px;
+        }
+
+        .item7 {
+            background-color: #1f363d;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 300px;
+            margin: 5px;
+        }
+
+        /* --------- baris ketiga --------- */
+        .row-middle {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+
+        .item8 {
+            background-color: #cfe0c3;
+            text-align: center;
+            padding-top: 100px;
+            flex: 3 1 360px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        .item9 {
+            background-color: #02c39a;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 100px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        /* --------- baris ketiga --------- */
+        .row-bottom {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+
+        .item10 {
+            background-color: #028090;
+            text-align: center;
+            padding-top: 100px;
+            flex: 1 1 100px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- ------------ baris pertama ------------- -->
+    <div class="row-start">
+        <div class="column">
+            <div class="item1"><img class="img-center" src="../assets/img/icon/alert.png" alt="alert"></div>
+            <div class="item5"><img src="../assets/img/icon/web-design.png" alt="web-design"></div>
+        </div>
+        <div class="column1">
+            <div class="item2"><img class="img-center" src="../assets/img/icon/calendar.png" alt="calendar"></div>
+            <div class="row1">
+                <div class="column2">
+                    <div class="item3"><img class="img-center" src="../assets/img/icon/laptop-computer.png"
+                            alt="laptop-computer"></div>
+                    <div class="item6"><img src="../assets/img/icon/magnifying-glass.png" alt="magnifying-glass"></div>
+
+                </div>
+                <div class="column2">
+                    <div class="item4"><img src="../assets/img/icon/light-bulb.png" alt="light-bulb"></div>
+                    <div class="item7"><img src="../assets/img/icon/mind.png" alt="mind"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ baris ketiga ------------- -->
+    <div class="row-middle">
+        <div class="item8"><img src="../assets/img/icon/parcel.png" alt="parcel"></div>
+        <div class="item9"><img src="../assets/img/icon/sun.png" alt="sun"></div>
+    </div>
+    <div class="row bottom">
+        <div class="item10"><img src="../assets/img/icon/wifi-signal.png" alt="wifi-signal"></div>
+    </div>
 </body>
+
 </html>
